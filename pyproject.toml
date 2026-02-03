@@ -1,5 +1,5 @@
 [project]
-name = "attentionviz"
+name = "vlm-attention-viz"
 version = "0.1.0"
 description = "Visualize attention patterns in vision-language models"
 readme = "README.md"
@@ -17,4 +17,4 @@ qwen = ["qwen-vl-utils>=0.0.8"]
 dev = ["bertviz>=1.4.1", "ipykernel>=6.30.1"]
 
 [project.scripts]
-attentionviz = "attentionviz.cli:main"
+vlm-attention-viz = "vlm_attention_viz.cli:main"

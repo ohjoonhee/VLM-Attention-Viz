@@ -1,5 +1,5 @@
 {
-  "name": "attentionviz-web",
+  "name": "vlm-attention-viz-web",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,4 +1,4 @@
-# AttentionViz
+# VLM Attention Viz
 
 Web-based visualization of attention patterns in vision-language models.
 
@@ -15,7 +15,7 @@ See [SPEC.md](SPEC.md) for the full design document.
 |---|---|---|
 | Qwen3-VL | `qwen3-vl` | `Qwen/Qwen3-VL-2B-Thinking` |
 
-Adding a new model family requires creating a single adapter file in `attentionviz/models/`.
+Adding a new model family requires creating a single adapter file in `vlm_attention_viz/models/`.
 
 ## Setup
 
@@ -40,7 +40,7 @@ npm install
 ### 1. Extract attention data
 
 ```bash
-uv run python -m attentionviz \
+uv run python -m vlm_attention_viz \
   --image path/to/image.jpg \
   --prompt "Describe this image in detail." \
   --output-dir ./output/sample1
@@ -69,9 +69,9 @@ DATA_DIR=../data npm run dev
 ## Project structure
 
 ```
-attentionviz/                # Python package
+vlm_attention_viz/           # Python package
   __init__.py
-  __main__.py                # python -m attentionviz entry point
+  __main__.py                # python -m vlm_attention_viz entry point
   cli.py                     # CLI argument parsing
   extract.py                 # Model-agnostic extraction orchestration
   models/

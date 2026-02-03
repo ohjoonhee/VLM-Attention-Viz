@@ -1,4 +1,4 @@
-# AttentionViz — Qwen3-VL Attention Visualization
+# VLM Attention Viz — Qwen3-VL Attention Visualization
 
 ## 1. Overview
 
@@ -231,7 +231,7 @@ Rationale: For rendering thousands of cells with frequent updates, Canvas avoids
 ## 5. File Structure
 
 ```
-attentionviz/
+vlm_attention_viz/
   extract.py              # data extraction script
   pyproject.toml          # Python dependencies (torch, transformers, etc.)
   web/

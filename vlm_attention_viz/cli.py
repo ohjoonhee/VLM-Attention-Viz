@@ -13,7 +13,7 @@ from .models import detect_model_type, get_adapter, list_model_types
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        prog="attentionviz",
+        prog="vlm-attention-viz",
         description="Extract attention weights from vision-language models.",
     )
     parser.add_argument("--image", type=str, required=True, help="Path to input image")
